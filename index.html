@@ -5,9 +5,15 @@
         <meta charset="utf-8" />
         <!-- utf-8, euc-kr -->
         <meta name="keywords" content="웹퍼블리싱, 계원, html, css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color:brown
+            }
+        </style>
     </head>
     <body> <!--- 본문 -->
-        <a href="sub.html">서브페이지</a>
+        <a style="color:purple;"  href="sub.html">서브페이지</a>
         <a href="sub2.html">서브페이지2</a>
         <a href="https://www.watcha.com">왓챠 바로가기</a>
         <a href="https://www.netflix.com">넷플릭스 바로가기</a>
@@ -138,6 +144,49 @@
             </button>
             <input type="submit" value="제출" />
         </form>
+
+        <div></div>
+        <section>
+            <h1>구획 제목</h1>
+            구획 내용
+        </section>
+        <nav>
+            <ul>
+                <li><a href="링크주소1">버튼1</a></li>
+                <li><a href="링크주소2">버튼2</a></li>
+            </ul>
+            <a href="링크주소1">버튼1</a>
+            <a href="링크주소2">버튼2</a>
+         </nav>
+        <article> <!-- 문서 주제와 다소 벗어난 이야기 -->
+            <h1>기사 제목</h1>
+            기사내용
+        </article>
+        <aside> <!-- 상관없는 이야기-->
+            <h1>광고 제목</h1>
+            광고 내용
+        </aside>
+        <header></header> <!-- 본문(body)의 서론 -->
+        <footer></footer> <!-- 본문(body)의 결론 -->
+
+        <script>
+            var canvas= document.getElementById("myCanvas"); 
+            //get elemnt by id
+            //id기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            //get context 내용 가져오기 
+
+
+        </script>
+
+        <audio control>
+            <source src="file_example_MP3_700KB.mp3" type="audio/mpeg"/>
+        </audio>
+
+        <videio control>
+            <source src="file_example_MP3_700KB.mp3" type="video/mp4"/>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kzWZCQzgc9g?si=gWHXPUIII2u1HM_e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
     </body>
 </html> <!-- 종료태그 -->
