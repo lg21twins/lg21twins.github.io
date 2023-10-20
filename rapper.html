@@ -2,9 +2,19 @@
 <html>
 <head>
     <title>Rapper Image</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+            background-color: #222;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="rapperCanvas" width="400" height="400"></canvas>
+    <canvas id="rapperCanvas"></canvas>
 
     <script>
         const canvas = document.getElementById('rapperCanvas');
@@ -27,17 +37,10 @@
         context.fillStyle = 'black';
         context.fill();
 
-        // Draw the eyes
+        // Draw the sunglasses
         context.beginPath();
         context.arc(160, 180, 20, 0, 2 * Math.PI);
         context.arc(240, 180, 20, 0, 2 * Math.PI);
-        context.fillStyle = 'white';
-        context.fill();
-
-        // Draw sunglasses
-        context.beginPath();
-        context.arc(160, 180, 20, 0, Math.PI);
-        context.arc(240, 180, 20, 0, Math.PI);
         context.fillStyle = 'black';
         context.fill();
 
@@ -53,7 +56,7 @@
         context.lineWidth = 2;
         context.stroke();
 
-        // Draw a microphone
+        // Draw the microphone
         context.beginPath();
         context.moveTo(180, 280);
         context.lineTo(220, 280);
@@ -69,4 +72,14 @@
         context.strokeStyle = 'silver';
         context.stroke();
 
-        // Add some
+        // Add some bling
+        context.beginPath();
+        context.arc(170, 230, 5, 0, 2 * Math.PI);
+        context.arc(230, 230, 5, 0, 2 * Math.PI);
+        context.fillStyle = 'gold';
+        context.fill();
+
+        context.closePath();
+    </script>
+</body>
+</html>
