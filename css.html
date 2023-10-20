@@ -5,9 +5,31 @@
         <meta charset="utf-8" />
         <style>
             body{ color:red; }
+            #div1{ color:blue; }
+            #div2{ color:#41c0bc}
+            #div3{ color:rgb(red, green, blue)}
+            /* css의 주석 */
         </style>
+        <!--html의 주석-->
     </head>
     <body>
-        <div>상속과 겹침</div>
+        <div id="div1">상속과 겹침</div>
+
+        <style>
+            div{ background-color: lightsalmon;}
+            #w1{
+                width: 200px;
+                height: 150px
+                background-color:lightsalmon;
+            }
+        </style>
+        <div>default</div>
+        <div id="w1">width</div>
+
+        <style>
+            #p1{
+                padding: 20px
+            }
+        </style>
     </body>
 </html>
