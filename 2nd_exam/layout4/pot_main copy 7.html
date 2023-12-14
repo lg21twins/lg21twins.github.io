@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio</title>
+        <meta charset="utf-8" />
+        <style>
+            #wrap2{
+                min-width: 1080px;
+                max-width: 1920px;
+                margin: 0px auto;
+            }
+            body{
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;  
+            }
+            header {
+            background-color: #252444;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0; 
+            }
+
+            header h1{
+                font-size: 50px;
+                color: #ffffff;
+            }
+        
+            header ul {
+                display: flex;
+                padding: 0;
+                list-style: none;
+                font-size: 16px;
+                justify-content: center;
+            }
+
+            header a {
+                text-decoration: none; /* 밑줄 제거 */
+                color: white; /* 글자색을 하얀색으로 설정 */
+                padding: 0px 10px;
+                padding-right: 20px;
+                cursor: pointer;
+                transition: color 0.3s ease; /* 부드러운 색상 변화를 위한 트랜지션 설정 */
+            }
+
+            header a:hover,
+            header a.selected {
+                color: rgb(99, 99, 194); /* 선택되었거나 호버됐을 때의 색상 (원하는 색상으로 변경) */
+            }
+
+            .back-button {
+            position: absolute;
+            left: 20px;
+            top: 40px;
+            color: #000;
+            background-color: #fff;
+            text-decoration: none;
+            padding: 6px 6px; 
+            border-radius: 50px;
+            }
+
+            .short_line{
+                width: 60px;
+                border-top: solid 1px rgb(255, 255, 255);
+                margin-left: 10px;
+            }
+            #content{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content_card{
+                width: 310px;
+                background-color: rgb(241, 241, 255);
+                box-shadow: 2px 2px 2px gray;
+                /* 가로위치 세로위치 번짐정도 그림자색상 */
+                margin: 20px;
+            }
+            .category{
+                position: absolute; /*위치지정 : 절대적인*/
+                /* top bottom left right */
+                left: 0px;
+                bottom: 0px;
+                background-color: black;
+                color: white;
+                padding: 5px 15px;
+                opacity: 0.7;
+            }
+            .content_card div:first-child{
+                position: relative;
+                /* relative 부모는 자식의 absolute 자식의 기준이 된다 */
+            }
+            .content_card img {
+                display: block;
+                width: 310px; /* 이미지의 가로 크기를 200px로 고정 */
+                height: auto; /* 높이를 자동으로 조절하여 비율을 유지 */
+            }
+            .content_card>div:last-child{
+                padding: 50px;
+            }
+            .content_card h2{
+                margin: 0px;
+            }
+            .content_card>div>div:nth-child(2){
+                color: gray;
+            }
+            .long_line{
+                width: 210px;
+                border-top: dotted;
+                margin: 10px 0px;
+            }
+            .content_card p{
+                margin: 0px;
+            }
+            footer ul {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+            }
+
+            footer li {
+                padding-right: 20px;
+            }
+
+            footer a {
+                text-decoration: none;
+                color: white;
+            }
+
+            footer {
+                background-color: #252444;
+                color: #fff;
+                text-align: center;
+                padding: 16px 0;
+            }    
+                        
+        </style>
+    </head>
+    <body>
+        <div id="wrap2">
+            <header>
+                <h1>YECHANSHON PORTFOLIO</h1>
+                <ul>
+                    <li><a href="pot_main.html">콘텐츠 기획</a></li>
+                    <li><a href="pot_main copy.html">콘텐츠 디자인</a></li>
+                    <li><a href="pot_main copy 2.html">실감 미디어</a></li>
+                    <li><a href="pot_main copy 3.html">3D 디자인</a></li>
+                    <li><a href="pot_main copy 4.html">영상 디자인</a></li>
+                    <li><a href="pot_main copy 5.html">DADA</a></li>
+                    <li><a href="pot_main copy 6.html">공모전</a></li>
+                    <li><a href="pot_main copy 7.html">기타</a></li>
+                </ul>
+                <a class="back-button" href="../index/index2.html">&larr; Back</a>
+            </header>
+            <div id="content">
+                <section class="content_card">
+                    <div>
+                        <img src="fest2.PNG"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>계원예술대학교
+                            </br>
+                            축제 부스
+                            </br>
+                            Menu Poster
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="fest1.JPG"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>계원예술대학교
+                            </br>
+                            축제 부스
+                            </br>
+                            Game Poster
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="filter.jpg"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>계원예술대학교 
+                            </br>
+                            축제 부스
+                            </br>
+                            Instagram Filter
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="ss.PNG"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>Small Studio
+                            </br>
+                            Concept Poster
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="yuza.JPG"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2>유즈 하이볼
+                            </br>
+                            Poster
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+                <section class="content_card">
+                    <div>
+                        <img src="band.jpg"/>
+                        <div class="category">photosho, design</div>
+                    </div>
+                    <div>
+                        <h2> 한국외국어대학교 밴드
+                            </br>
+                            동아리 AudioFill
+                            </br>
+                            공연 Poster
+                        </h2>
+                        <div>2023.12.01</div>
+                        <div class="long_line"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div>Read on</div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>&copy; 2023 YECHANSHON Portfolio. All rights reserved.</p>
+                <p>Contact: lg22twins@gmail.com | Phone: 010-2814-0586</p>
+                <p>Follow me: <a href="https://www.instagram.com/yechanshon" target="_blank">Instagram</a> | <a href="https://www.linkedin.com/in/yechanshon" target="_blank">LinkedIn</a></p>
+            </footer>
+        </div>    
+    </body>
+</html>

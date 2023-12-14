@@ -1,190 +1,192 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>index</title>
-        <meta charset="utf-8" />
-        <style>
-            #wrap{
-                min-width: 1000px;
-                max-width: 1920px;
-                margin: 0px auto;
-            }
-            header ul{
-            list-style: none; /*리스트 모양 : 없음*/
-            display: flex; /*내용을 가로배치로 유연하게(flex)*/
-            justify-content: space-between;
-            background-color: rgb(34,145,108);
-            color: white;
-            padding: 10px 50px;
-            }
-            header li {
-                padding: 0px 10px;
-            }
-            header h1 {
-                margin: 4px;
-            }
-            header h1 span{
-                color: rgb(196, 196, 19)
-            }
-            #main_visual{
-                background-image: url("main_visual.png");
-                padding: 150px;
-                text-align: center;
-                color:white;
-                background-size: 100px auto;
-                background-repeat: no-repeat;
-                background-color: black;
-                background-size: contain; /*담기도록*/
-                background-size: cover; /*씌우도록*/
-                background-position: 50% 50%;
-            }
-            #main_visual p{
-                font-size: 20px;
-            }
-            #main_visual h2{
-                font-size:50px;
-                letter-spacing: 15px;
-            }
-            section{
-                text-align: center;
-                color: gray;
-            }
-            section h3{
-                font-size: 30px;
-                color:rgb(34, 145, 108);
-            }
-            #content1{
-                padding: 80px;
-            }
-            #content1 ul{
-                display: flex;
-                list-style: none;
-                padding: 0px;
-                justify-content: stretch;
-                margin-top: 100px;
-            }
-            #content1 li{
-                border-right: solid 1px gray;
-            }
-            #content1 li:last-child{
-                border: none;
-            }
-            #content1 dt{
-                font-size: 19px;
-                font-weight: bold;
-                margin: 20px;
-            }
-            #content1 dd{
-                margin: 0px;
-            }
-            #content2 ul{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                list-style: none;
-                padding: 0px;
-                margin-top: 150px;
-            }
-            #content2 li{
-                width:25%; /* li를 1/4크기로 */
-            }
-            #content2 img{
-                width: 100%; /* 있을 수 있는 공간에서 최대크기 */
-                display: block; /* 글자취급하여 생기는 여백 해결 */
-            }
-        </style>
-    </head>
-    <body>
-        <div id="warp">
-            <header>
-                <h1>YECHANSHON<span>20</span></h1>
-                <ul>
-                    <li><a href="../index/index2.html">HOME</a></li>
-                    <li><a href="../html/html.html"> html 연습</a></li>
-                    <li><a href="../css/css.html"> css 연습</a></li>
-                    <li><a href="../sub1/sub1.html"> 자유주제페이지</a></li>
-                    <li><a href="../layout1/layout1.html"> 레이아웃1 </a></li>
-                    <li><a href="../layout2/layout2.html"> 레이아웃2 </a></li>
-                    <li><a href="../layout3/layout3.html"> 레이아웃3 </a></li>
-                    <li><a href="../last/last.html"> 포토폴리오(자유주제) 레이아웃 </a></li>
-                </ul>
-            </header>
-            <div id="main_visual">
-                <p>Lorem ipsum dolor sit iusmod tempor</p>
-                <h2>incididunt bore</h2>
-                <p>Orem ipsum dolor sit amet, consectetur</p>
-                <img src=""main_visual.png">
-                <div class="button">KNOW  MORE</div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YECHANSHON PORTFOLIO</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-            <div id=""></div>
-            <section id="content1">
-                <h3>ABOUT ME</h3>
-                <p>
-                    abcabcabcabcabc abcabcabcabcabc abcabcabcabcabc
-                    abcabcabcabcabc abcabcabcabcabc abcabcabcabcabc
-                    abcabcabcabcabc abcabcabcabcabc abcabcabcabcabc
-                </p>
-                <ul>
-                    <li>
-                        <img src="icon1.png">
-                        <dl>
-                            <dt>Title goes here</dt>
-                            <dd>
-                                onsectetur adipisicing elit, sedo eiusmod tempor 
-                                incidi et dolorerserss eerhfre mag.
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <img src="icon2.png">
-                        <dl>
-                            <dt>Title goes here</dt>
-                            <dd>
-                                onsectetur adipisicing elit, sedo eiusmod tempor 
-                                incidi et dolorerserss eerhfre mag.
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <img src="icon3.png">
-                        <dl>
-                            <dt>Title goes here</dt>
-                            <dd>
-                                onsectetur adipisicing elit, sedo eiusmod tempor 
-                                incidi et dolorerserss eerhfre mag.
-                            </dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <img src="icon4.png">
-                        <dl>
-                            <dt>Title goes here</dt>
-                            <dd>
-                                onsectetur adipisicing elit, sedo eiusmod tempor 
-                                incidi et dolorerserss eerhfre mag.
-                            </dd>
-                        </dl>
-                    </li>
-                </ul>
-            </section>
-            <section id="content2">
-                <h3>>MY WORK</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                    sed do eiusmod tempor <br /> incididunt ut labore et dolore magna 
-                    aliqua.
-                </p>
-                <ul>
-                    <li><img src="work1.png">
-                    <li><img src="work2.png">
-                    <li><img src="work3.png">
-                    <li><img src="work4.png">
-                    <li><img src="work5.png">
-                    <li><img src="work6.png">
-                    <li><img src="work7.png">
-                </ul>
-            </section>
-        </div>
-    </body>
+        #wrap {
+            /* Add any common styles for the wrapper if needed */
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        header ul {
+            display: flex;
+            padding: 0;
+            list-style: none;
+            font-size: 16px;
+            justify-content: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            padding: 0px 10px;
+            padding-right: 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover,
+        header a.selected {
+            color: rgb(99, 99, 194);
+        }
+
+        section {
+            text-align: center;
+            color: gray;
+            padding: 80px;
+        }
+
+        section h3 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+        }
+
+        #content1 ul {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+            margin-top: 100px;
+        }
+
+        #content1 li {
+            flex: 1;
+            border-right: solid 1px gray;
+            padding: 50px;
+        }
+
+        #content1 li:last-child {
+            border: none;
+        }
+
+        #content1 dd {
+            margin: 0px;
+        }
+
+        footer ul {
+            display: flex;
+            list-style: none;
+            padding: 0px;
+        }
+
+        footer li {
+            padding-right: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+        }
+            
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>YECHANSHON PORTFOLIO</h1>
+            <ul>
+                <li><a href="../index/index2.html">HOME</a></li>
+                <li><a href="../html/html.html"> html 연습</a></li>
+                <li><a href="../css/css.html"> css 연습</a></li>
+                <li><a href="../sub1/sub1.html"> 자유주제페이지</a></li>
+                <li><a href="../layout1/layout1.html"> 레이아웃1 </a></li>
+                <li><a href="../layout2/layout2.html"> 레이아웃2 </a></li>
+                <li><a href="../layout3/layout3.html"> 레이아웃3 </a></li>
+                <li><a href="../layout4/pot_main.html"> 포토폴리오(자유주제) 레이아웃 </a></li>
+            </ul>
+        </header>
+
+        <section id="header-image">
+            <img src="FB_IMG_1584336327529_Original.jpg" alt="Header Image">
+        </section>
+
+        <section id="content1">
+            <h3>ABOUT ME</h3>
+            <p>
+                손예찬은 창의적이고 열정적인 그래픽 디자이너로, 간결하면서도 아름다운 디자인을 통해 메시지를 전달하는 것을 목표로 삼고 있습니다. </br>
+                그의 작업물은 간단한 아이디어와 복잡한 메시지를 조화롭게 결합하여 독자에게 강력한 시각적 경험을 제공합니다. </br>
+                로고 및 브랜딩, 웹 및 앱 디자인, 포스터 및 판촉물 디자인 등 다양한 분야에서 경험을 쌓아온 그는 항상 클라이언트의 비전을 수용하고 뛰어난 결과물을 만들어내기 위해 노력합니다. </br>
+                Adobe Creative Suite 및 다양한 디자인 도구를 능숙하게 활용하며, 최신 트렌드와 기술에 대한 꾸준한 학습을 통해 디자인 업계의 동향을 주시하고 있습니다.
+            </p>
+            <ul>
+                <li>
+                    <img src="icon1.png" alt="Icon 1">
+                    <dl>
+                        <dt><h2>디자인 철학</h2></dt>
+                        <dd>
+                            제 디자인 철학은 간단함에서 아름다움을 찾는 것입니다.
+                            복잡한 아이디어와 메시지를 간결하고 효과적인 디자인으로 전달하는 것이 제 목표입니다.
+                            각 작업물은 그림, 색채, 및 레이아웃을 조화롭게 결합하여
+                            독자에게 강력한 시각적 경험을 제공합니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="icon2.png" alt="Icon 2">
+                    <dl>
+                        <dt><h2>전문 분야</h2></dt>
+                        <dd>
+                            저는 로고 및 브랜딩, 웹 및 앱 디자인,
+                            포스터 및 판촉물 디자인 등 다양한 분야에서 경험을 쌓았습니다.
+                            클라이언트와의 협업을 통해 고유한 비전과 목표를 달성하는 것이 항상 제 목표입니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="icon3.png" alt="Icon 3">
+                    <dl>
+                        <dt><h2>툴 및 기술</h2></dt>
+                        <dd>
+                            Adobe Creative Suite(Photoshop, Illustrator, InDesign)를 주로 사용하며,
+                            프로그래밍 3D과 Unity와 Spark Ar등의 실감미디어를 사용하며,
+                            최신 트렌드와 기술에 대한 지속적인 학습을 통해 디자인 업계의 동향을 파악하고 있습니다.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="icon4.png" alt="Icon 4">
+                    <dl>
+                        <dt><h2>클라이언트와의 협업</h2></dt>
+                        <dd>
+                            클라이언트와의 원활한 소통과 협업은 어떤 프로젝트에도 핵심입니다.
+                            제가 수행한 프로젝트들은 항상 클라이언트의 비전을 수용하고
+                            그들의 기대치를 뛰어넘기 위해 노력했습니다.
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 YECHANSHON Portfolio. All rights reserved.</p>
+        <p>Contact: lg22twins@gmail.com | Phone: 010-2814-0586</p>
+        <p>Follow me: <a href="https://www.instagram.com/yechanshon" target="_blank">Instagram</a> | <a href="https://www.linkedin.com/in/yechanshon" target="_blank">LinkedIn</a></p>
+    </footer>
+</body>
 </html>
